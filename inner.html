@@ -1,54 +1,52 @@
 <!DOCTYPE html>
   <html lang="ru">
-    <head>
-      <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
-    </head>
+  <head>
+    <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
+  </head>
   <body>
-<!--хедер--------------------------------------------------------------------------------------------------------------------------->
+<!--хедер-->
     <header class="main-header">
-  	  <a><img src="#" class="main-navigation-logo" alt="City of sedona"></a>
-  	    <ul class="site-navigation">
-  	     	<li><a href="Info.html">Информация</a></li>
+      <a><img src="#" class="main-navigation-logo" alt="City of sedona"></a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
           <li><a href="foto-video.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
-  	   	</ul>	
-  	</header>
+        </ul>     
+    </header>
     
     <section class="special">
-<!--здесь будет форма выбора-------------------------------------------------------------------------------------------------------->
+<!--здесь будет форма выбора-->
     </section>
     
     <section class="search">
       <p class="found">Найдено: 3</p>
-        <div class="search-form">
-<!--форма сортировки---------------------------------------------------------------------------------------------------------------->          
-          <ul class="filters">
-            <li>Сортировка</li>
-            <li class="search-price"><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-         </ul>
-        </div>
+<!--форма сортировки-->          
+        <ul class="filters">
+          <li>Сортировка</li>
+          <li class="search-price"><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
         <div class="search-icon">
           <a href="#" class="arrow icon-up-dir"></a>
           <a href="#" class="arrow-active icon-down-dir"></a>
         </div>
     </section>
-<!--блок отелей--------------------------------------------------------------------------------------------------------------------->
-    <section class="hotels">
+<!--блок отелей-->
+    <article class="hotels">
       <figure class="hotel-image"><img src="http://placehold.it/150x100"></figure>
         <div class="hotel-content">
           <a href="#" class="link-title"><h2>Amara Resort & Spa</h2></a>
             <div class="hotel-btn">
-              <div class="type">Гостиница</div>
-                <a href="#" class="btn-blue">Подробнее</a>
+              <span class="type">Гостиница</span>
+                <span class="price">от 4000 р.</span>
             </div>
             <div class="hotel-btn">
-              <div class="price">от 3500 р.</div>
-               <a href="#" class="btn-brown">Забронировать</a>
-            </div>
+                <a href="#" class="btn-blue">Подробнее</a>
+                <a href="#" class="btn-brown">Забронировать</a>
+              </div>
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
@@ -59,18 +57,18 @@
           </div>
             <p class="rating-nubmers">Рейтинг: 8,5</p>
         </div>
-    </section>
+    </article>
 
-    <section class="hotels">
+    <article class="hotels">
       <figure class="hotel-image"><img src="http://placehold.it/150x100"></figure>
         <div class="hotel-content">
           <a href="#" class="link-title"><h2>Desert Quail Inn</h2></a>
             <div class="hotel-btn">
-              <div class="type">Мотель</div>
-                <a href="#" class="btn-blue">Подробнее</a>
+              <span class="type">Мотель</span>
+                <span class="price">от 3000 р.</span> 
             </div>
             <div class="hotel-btn">
-              <div class="price">от 2000 р.</div>
+              <a href="#" class="btn-blue">Подробнее</a>
                 <a href="#" class="btn-brown">Забронировать</a>
             </div>
         </div>
@@ -82,20 +80,20 @@
           </div>
             <p class="rating-nubmers">Рейтинг: 8,9</p>
         </div>
-    </section>
+    </article>
 
-    <section class="hotels">
+    <article class="hotels">
       <figure class="hotel-image"><img src="http://placehold.it/150x100"></figure>
         <div class="hotel-content clearfix">
           <a href="#" class="link-title"><h2>Villas at Poco Diablo</h2></a>
             <div class="hotel-btn">
-              <div class="type">Апартаменты</div>
-                <a href="#" class="btn-blue">Подробнее</a>
-           </div>
-           <div class="hotel-btn">
-              <div class="price">от 4000 р.</div>
+              <span class="type">Апартаменты</span>
+                <span class="price">от 2000 р.</span>
+            </div>
+            <div class="hotel-btn">
+              <a href="#" class="btn-blue">Подробнее</a>
                 <a href="#" class="btn-brown">Забронировать</a>
-           </div>
+            </div>
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
@@ -104,8 +102,8 @@
           </div>
             <p class="rating-nubmers">Рейтинг: 9,2</p>
         </div>
-    </section>
-<!--футер---------------------------------------------------------------------------------------------------------------------->
+    </article>
+<!--футер-->
   	<footer class="main-footer">
   	  <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
   	    <div class="footer-social">
@@ -117,8 +115,8 @@
   	    </div>
   	      <p class="footer-copyright">
   	        <b>Website by</b>
-  	        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+  	          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
   	      </p>
-  	</footer>
+    </footer>
   </body>
-</html>
+  </html>
