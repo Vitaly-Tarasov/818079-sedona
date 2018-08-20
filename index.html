@@ -82,13 +82,40 @@
           </ul>
         </section>
 <!--блок обратной связи-->
-        <section class="interest">
+        <section class="hotel-search">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="button-search">Найти гостиницу</a>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              <button class="search-form-btn" type="button">Поиск гостиницы в Седоне</button>
+              <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p class="arrival-date-form">
+              <label>Дата заезда:
+                <input type="text" name="arrival-day" value="24 апреля 2017">
+                <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Выбор даты в календаре"></button>
+              </label>
+            </p>
+            <p class="departure-date-form">
+              <label>Дата выезда:
+                <input type="text" name="departure-day" value="4 июля 2017">
+                <button type="button"><img src="img/calendar.svg" width="21" height="22" alt="Выбор даты в календаре"></button>
+              </label>
+            </p>
+            <div class="half-width adults-number-form">
+              <label for="adults-counter-field">Взрослые:</label>
+              <button type="button">-</button>
+              <input type="text" name="adults-counter" id="adults-counter-field" value="2">
+              <button type="button">+</button>
+            </div>
+            <div class="half-width children-number-form">
+              <label for="children-counter-field">Дети:</label>
+              <button type="button">-</button>
+              <input type="text" name="children-counter" id="children-counter-field" value="0">
+              <button type="button">+</button>
+            </div>
+            <input type="submit" value="Найти">
+          </form>
         </section>
         <section class="map">
-          <img src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
+          <img src="img/map-1.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
         </section>
       </main>
 <!--футер-->
@@ -98,11 +125,11 @@
             <ul>
               <li class="social-button">
                 <a href="#">
-                  <img src="img/t.svg" width="20" height="16" alt="Telegram">Телеграм</a>
+                  <img src="img/twitter.svg" width="20" height="16" alt="Telegram"></a>
               </li>
               <li class="social-button">
                 <a  href="#"> 
-                  <img src="img/fb.svg" width="20" height="16" alt="Facebook">Фейсбук</a>
+                  <img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a>
               </li>
               <li class="social-button">
                 <a href="#">

@@ -18,14 +18,53 @@
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>     
       </header>
-    
-      <section class="special">
-<!--здесь будет форма выбора-->
+<!--блок фильтров-->
+      <section class="filter-form">
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form-choice">
+            <legend>Инфраструктура</legend>
+            <input type="checkbox" id="check-1">
+            <label for="check-1">Бассейн</label>
+
+            <input type="checkbox" id="check-2">
+            <label for="check-2">Парковка</label>
+
+            <input type="checkbox" id="check-3">
+            <label for="check-3">Wi-fi</label>
+          </fieldset>
+          <fieldset class="form-choice">
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="check-1">
+            <label for="check-1">Гостиница</label>
+
+            <input type="checkbox" id="check-2">
+            <label for="check-2">Мотель</label>
+
+            <input type="checkbox" id="check-3">
+            <label for="check-3">Апартаменты</label>
+          </fieldset>
+          <fieldset class="form-choice">
+            <legend>Стоимость в сутки (р):</legend>
+              <div class="range">
+                <div class="range-form">
+                  <label for="range-1">От 0</label>
+                  <input type="text" id="range-1">
+                </div>
+                <div class="range-form">
+                  <label for="range-2">До 3000</label>
+                  <input type="text" id="range-2">
+                </div>
+                <div class="scale">
+                  <button class="range-btn-from">От</button>
+                  <button class="range-btn-to">До</button>
+                </div>  
+              </div>
+          </fieldset>
+        </form> 
       </section>
     
-      <section class="search">
-        <p class="found">Найдено: 3</p>
-<!--форма сортировки-->          
+      <section class="hotel-sort">
+        <p class="found">Найдено: 3</p>         
           <ul class="filters">
             <li>Сортировка</li>
             <li class="search-price"><a href="#">По цене</a></li>
@@ -33,8 +72,8 @@
             <li><a href="#">По рейтингу</a></li>
           </ul>
           <div class="search-icon">
-            <a href="#" class="arrow icon-up-dir"></a>
-            <a href="#" class="arrow-active icon-down-dir"></a>
+            <a><img src="img/icon-up-dir.svg" alt="по возрастанию" width="11" height="10"></a>
+            <a><img src="img/icon-down-dir.svg" alt="по убыванию" width="11" height="10"></a>
           </div>
       </section>
 <!--блок отелей-->
@@ -55,10 +94,10 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 8,5</p>
         </div>
@@ -79,9 +118,9 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 8,9</p>
         </div>
@@ -102,28 +141,37 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span></span>
-            <span></span>
+            <span><img src="img/star-1.svg"></span>
+            <span><img src="img/star-1.svg"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 9,2</p>
         </div>
       </article>
 <!--футер-->
-  	  <footer class="main-footer">
-  	    <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
-  	      <div class="footer-social">
-  	        <ul>
-  	  	      <li><a class="social-button" href="#">Телеграм</a></li>
-  	  	      <li><a class="social-button" href="#">Фейсбук</a></li>
-  	  	      <li><a class="social-button" href="#">Ютуб</a></li>
-  	        </ul>
-  	      </div>
-  	        <p class="footer-copyright">
-  	          <b>Website by</b>
-  	          <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
-  	        </p>
+      <footer class="main-footer">
+        <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
+          <div class="footer-social">
+            <ul>
+              <li class="social-button">
+                <a href="#">
+                  <img src="img/twitter.svg" width="20" height="16" alt="Telegram"></a>
+              </li>
+              <li class="social-button">
+                <a  href="#"> 
+                  <img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a>
+              </li>
+              <li class="social-button">
+                <a href="#">
+                  <img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
+              </li>
+            </ul>
+          </div>
+        <p class="footer-copyright">
+          <b>Website by</b>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
+        </p>
       </footer>
-    </div> 
+    </div>
   </body>
   </html>
