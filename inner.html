@@ -32,6 +32,7 @@
             <input type="checkbox" id="check-3">
             <label for="check-3">Wi-fi</label>
           </fieldset>
+          
           <fieldset class="form-choice">
             <legend>Тип жилья:</legend>
             <input type="checkbox" id="check-1">
@@ -43,16 +44,13 @@
             <input type="checkbox" id="check-3">
             <label for="check-3">Апартаменты</label>
           </fieldset>
+         
           <fieldset class="form-choice">
             <legend>Стоимость в сутки (р):</legend>
               <div class="range">
                 <div class="range-form">
-                  <label for="range-1">От 0</label>
-                  <input type="text" id="range-1">
-                </div>
-                <div class="range-form">
-                  <label for="range-2">До 3000</label>
-                  <input type="text" id="range-2">
+                  <label>от<input type="text" name="min" value="0"></label>
+                  <label>до<input type="text" name="max" value="3000"></label>
                 </div>
                 <div class="scale">
                   <button class="range-btn-from">От</button>
@@ -71,9 +69,9 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
-          <div class="search-icon">
-            <a><img src="img/icon-up-dir.svg" alt="по возрастанию" width="11" height="10"></a>
-            <a><img src="img/icon-down-dir.svg" alt="по убыванию" width="11" height="10"></a>
+          <div class="button-arrow">
+            <a class="up" href="#" ><span class="visually-hidden">вверх</span></a>
+            <a class="down" href="#"><span class="visually-hidden">вниз</span></a>
           </div>
       </section>
 <!--блок отелей-->
@@ -94,10 +92,10 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
+            <span class="visually-hidden"></span>
+            <span class="visually-hidden"></span>
+            <span class="visually-hidden"></span>
+            <span class="visually-hidden"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 8,5</p>
         </div>
@@ -118,9 +116,8 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
+            <span class="visually-hidden"></span>
+            <span class="visually-hidden"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 8,9</p>
         </div>
@@ -141,8 +138,8 @@
         </div>
         <div class="hotel-rating">
           <div class="rating-stars">
-            <span><img src="img/star-1.svg"></span>
-            <span><img src="img/star-1.svg"></span>
+            <span class="visually-hidden"></span>
+            <span class="visually-hidden"></span>
           </div>
             <p class="rating-nubmers">Рейтинг: 9,2</p>
         </div>
@@ -151,25 +148,13 @@
       <footer class="main-footer">
         <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
           <div class="footer-social">
-            <ul>
-              <li class="social-button">
-                <a href="#">
-                  <img src="img/twitter.svg" width="20" height="16" alt="Telegram"></a>
-              </li>
-              <li class="social-button">
-                <a  href="#"> 
-                  <img src="img/fb-icon.svg" width="20" height="16" alt="Facebook"></a>
-              </li>
-              <li class="social-button">
-                <a href="#">
-                  <img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
-              </li>
-            </ul>
+           <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+           <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+           <a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
           </div>
         <p class="footer-copyright">
           <b>Website by</b>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo"><span class="visually-hidden">HTML ACADEMY</span></a>>
         </p>
       </footer>
     </div>
