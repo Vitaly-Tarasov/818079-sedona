@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+
+
+.hotel-search button {
+font: inherit;
+text-align: center;
+background-color: #81b3d2;
+border: none;
+
+}
+
 .wrap {
   width: 1200px;
   margin: 0 auto;
@@ -21,16 +31,20 @@ a {
   background-color: #ffffff;
 }
 
+a .logo {
+  text-align: center;
+}
 
+.main-header  {
+  text-align: center;
+}
 
 .main-header ul  {
   list-style: none;
   background-color: #ffffff;
 }
 
-.main-header li {
-  text-align: center;
-}
+
 
 .main-header a {
   font-size: 14px;
@@ -53,7 +67,7 @@ a {
 
 .welcome {
   text-align:center;
-  background: url("../img/intro-mask.svg") no-repeat 0 100%,#81b3d2 url("../img/background-photo.jpg") no-repeat 0 22%;
+  background: url("../img/intro-mask.svg") no-repeat 0 100%, #81b3d2 url("../img/background-photo.jpg") no-repeat 0 22%;
 }
 
 .reasons {
@@ -85,11 +99,13 @@ a {
 }
 
 .town-foto {
-  background: #81b3d2 url("../img/street-foto.jpg") no-repeat;
+  background-color: #81b3d2;
+  text-align: right;
 }
 
 .bridge-image {
-  background: #81b3d2 url("../img/devils-canyon.jpg") no-repeat;
+  background-color: #81b3d2;
+  text-align: right;
 }
 
 .things {
@@ -100,6 +116,10 @@ a {
 
 .things h3 {
   font-size:21px;
+}
+
+.things li {
+  list-style-type: none;
 }
 
 
@@ -299,22 +319,9 @@ a {
   background-color: #5496bd;
 }
 
-.social-button-tw {
 
-  background: #81b3d2 url("../img/twitter.svg") no-repeat;
-}
 
-.social-button-fb {
-
-  background: #81b3d2 url("../img/facebook.svg") no-repeat;
-}
-
-.social-button-yt {
-
-  background: #81b3d2 url("../img/youtube.svg") no-repeat;
-}
-
-.footer-copyright{
+.footer-copyright {
   text-align:right;
 }
 
@@ -327,7 +334,7 @@ a {
 
 .footer-copyright a {
   color:inherit;
-  background: #ffffff url("../img/logo-htmlacademy.svg") no-repeat;
+  background: #ffffff 
 }
 
 .footer-copyright a:hover,
@@ -339,11 +346,12 @@ a {
   opacity: 0.5;
 }
 
-/* СТРАНИЦА КАТАЛОГА */
+/*inner*/
+
 .filter-form {
 
   color: #ffffff;
-  background: #4e7faa url("../img/catalog-filter.jpg") no-repeat 0 15%;
+  background: #4e7faa url("../img/filter-background.jpg") no-repeat 0 15%;
 }
 
 .filter-form .form-choice
@@ -356,6 +364,7 @@ a {
   font-weight:bold;
   line-height:21px;
 }
+
 
 .form-choice label,
 .form-choice-price label {
@@ -499,15 +508,13 @@ a {
   opacity: 0.3;
 }
 
-.rating-count {
 
+
+.rating-stars {
   text-align: right;
 }
 
-.rating-stars .star {
 
-  background: #ffffff url("../img/star-1.svg") no-repeat;
-}
 
 .hotel-button a {
   font-size:14px;
@@ -547,8 +554,7 @@ a {
 }
 
 .rating-nubmers {
-  
-  text-align: center;
+  text-align: right;
   color: #666666;
   background-color: #f2f2f2;
 }

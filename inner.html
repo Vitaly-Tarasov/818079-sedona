@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="wrap">
@@ -52,22 +55,24 @@
                   <label>до<input type="text" name="max" value="3000"></label>
                 </div>
                 <div class="scale">
-                  <button class="range-btn-from">От</button>
-                  <button class="range-btn-to">До</button>
+                  <button class="range-button-from">От</button>
+                  <button class="range-button-to">До</button>
                 </div>  
-              <button class="btn-show" type="submit">Показать</button>
+              <button class="button-show" type="submit">Показать</button>
           </fieldset>
         </form> 
       </section>
     
       <section class="hotel-sort">
-        <p class="found">Найдено: 3</p>         
-          <ul class="filters">
-            <li>Сортировка</li>
-            <li class="search-price"><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
+          <span>Найдено: 3</span>
+          <div class="sort-type">
+            <span>Сортировка:</span>
+            <ul>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
           <div class="button-arrow">
             <a class="up" href="#" ><span class="visually-hidden">вверх</span></a>
             <a class="down" href="#"><span class="visually-hidden">вниз</span></a>
@@ -75,81 +80,84 @@
       </section>
 <!--блок отелей-->
       <article class="hotels">
-        <figure class="hotel-image">
-          <img src="img/hotel-1.jpg" alt="Amara Resort & Spa">
-        </figure>
-        <div class="hotel-content">
-          <a href="#" class="link-title"><h3>Amara Resort & Spa</h3></a>
-            <div class="hotel-btn">
-              <span class="type">Гостиница</span>
-              <span class="price">от 4000 р.</span>
-            </div>
-            <div class="hotel-btn">
-              <a href="#" class="btn-blue">Подробнее</a>
-              <a href="#" class="btn-brown">Забронировать</a>
-            </div>
-        </div>
-        <div class="hotel-rating">
-          <div class="rating-stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
+        <div class="hotels-item">
+          <figure class="hotel-image">
+            <img src="img/hotel-1.jpg" alt="Amara Resort & Spa">
+          </figure>
+          <div class="hotel-content">
+            <a href="#" class="link-title"><h3>Amara Resort & Spa</h3></a>
+              <div class="hotel-button">
+                <span class="type">Гостиница</span>
+                <span class="price">от 4000 р.</span>
+              </div>
+              <div class="hotel-button">
+                <a href="#" class="button-blue">Подробнее</a>
+                <a href="#" class="button-brown">Забронировать</a>
+              </div>
           </div>
-            <p class="rating-nubmers">Рейтинг: 8,5</p>
-        </div>
+          <div class="hotel-rating">
+            <div class="rating-stars">
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+            </div>
+              <span class="rating-nubmers">Рейтинг: 8,5</span>
+          </div>
 
-        <figure class="hotel-image">
-          <img src="img/hotel-2.jpg" alt="Desert Quail Inn">
-        </figure>
-        <div class="hotel-content">
-          <a href="#" class="link-title"><h3>Desert Quail Inn</h3></a>
-            <div class="hotel-btn">
-              <span class="type">Мотель</span>
-              <span class="price">от 3000 р.</span> 
-            </div>
-            <div class="hotel-btn">
-              <a href="#" class="btn-blue">Подробнее</a>
-              <a href="#" class="btn-brown">Забронировать</a>
-            </div>
-        </div>
-        <div class="hotel-rating">
-          <div class="rating-stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
+          <figure class="hotel-image">
+            <img src="img/hotel-2.jpg" alt="Desert Quail Inn">
+          </figure>
+          <div class="hotel-content">
+            <a href="#" class="link-title"><h3>Desert Quail Inn</h3></a>
+              <div class="hotel-button">
+                <span class="type">Мотель</span>
+                <span class="price">от 3000 р.</span> 
+              </div>
+              <div class="hotel-button">
+                <a href="#" class="button-blue">Подробнее</a>
+                <a href="#" class="button-brown">Забронировать</a>
+              </div>
           </div>
-            <p class="rating-nubmers">Рейтинг: 8,9</p>
-        </div>
+          <div class="hotel-rating">
+            <div class="rating-stars">
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+            </div>
+              <span class="rating-nubmers">Рейтинг: 8,9</span>
+          </div>
         
-        <figure class="hotel-image">
-          <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
-        </figure>
-        <div class="hotel-content clearfix">
-          <a href="#" class="link-title"><h3>Villas at Poco Diablo</h3></a>
-            <div class="hotel-btn">
-              <span class="type">Апартаменты</span>
-              <span class="price">от 2000 р.</span>
-            </div>
-            <div class="hotel-btn">
-              <a href="#" class="btn-blue">Подробнее</a>
-              <a href="#" class="btn-brown">Забронировать</a>
-            </div>
-        </div>
-        <div class="hotel-rating">
-          <div class="rating-stars">
-            <span class="visually-hidden"></span>
-            <span class="visually-hidden"></span>
+          <figure class="hotel-image">
+            <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
+          </figure>
+          <div class="hotel-content clearfix">
+            <a href="#" class="link-title"><h3>Villas at Poco Diablo</h3></a>
+              <div class="hotel-button">
+                <span class="type">Апартаменты</span>
+                <span class="price">от 2000 р.</span>
+              </div>
+              <div class="hotel-button">
+                <a href="#" class="button-blue">Подробнее</a>
+                <a href="#" class="button-brown">Забронировать</a>
+              </div>
           </div>
-            <p class="rating-nubmers">Рейтинг: 9,2</p>
-        </div>
+          <div class="hotel-rating">
+            <div class="rating-stars">
+              <span class="star"><img src="img/star-1.svg"></span>
+              <span class="star"><img src="img/star-1.svg"></span>
+            </div>
+              <span class="rating-nubmers">Рейтинг: 9,2</span>
+          </div>
+        </div>  
       </article>
 <!--футер-->
       <footer class="main-footer">
         <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
           <div class="footer-social">
-           <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-           <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-           <a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
+           <a class="social-button social-button-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+           <a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+           <a class="social-button social-button-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
           </div>
         <p class="footer-copyright">
           <b>Website by</b>

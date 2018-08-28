@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="wrap">
 <!--хедер-->
       <header class="main-header">
-        <a href="index.html">
+        <a class="logo" href="index.html">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="logo of Sedona">
         </a>
           <ul class="site-navigation">
@@ -24,18 +27,18 @@
           <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
         </div>
         <div class="reasons">
-          <h2>Седона-небольшой городок в Аризоне,<br>
+          <h2 class="promo">Седона-небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div> 
 <!--Особенности-->
         <section class="features">
-          <div class="true city">
+          <div class="true-city">
             <h3>Настоящий городок</h3>
             <span class="first">№1</span>
             <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
           </div>  
-          <figure class="town foto">
+          <figure class="town-foto">
             <img src="img/street-foto.jpg" width="800" height="401" alt="Фото городка">
           </figure> 
 <!--Блок жилье/еда/сувениры-->
@@ -59,7 +62,7 @@
             <span class="second">№2</span>
             <p>Да, по нему можно пройти! если вы конечно вы осмелитесь</p>
           </div>  
-          <figure class="bridge image">
+          <figure class="bridge-image">
             <img src="img/devils-canyon.jpg" width="800" height="400" alt="Фото моста">
           </figure>
 <!--Блок преимуществ-->
@@ -84,33 +87,37 @@
 <!--блок обратной связи-->
         <section class="hotel-search">
           <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <button class="search-form-btn" type="button">Поиск гостиницы в Седоне</button>
-              <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
-            <p class="arrival-date-form">
-              <label>Дата заезда:</label>
-                <input type="text" name="arrival-day" value="24 апреля 2017">
-                <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span></button>
-            </p>
-            <p class="departure-date-form">
-              <label>Дата выезда:</label>
-                <input type="text" name="departure-day" value="4 июля 2017">
-                <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span></button>
-            </p>
-            <div class="half-width adults-number-form">
-              <label for="adults">Взрослые:</label>
-              <button type="button" class="button-minus"><span class="visually-hidden">минус</span></button>
-              <input  class="count" type="text"  id="adults" name="adults" placeholder="2" required>
-              <button class="button-plus" type="button"><span class="visually-hidden">плюс</span></button>
-            </div>
-            <div class="half-width children-number-form">
-              <label for="children">Дети:</label>
-              <button type="button" class="button-minus"><span class="visually-hidden">минус</span></button>
-              <input  class="count" type="text"  id="children" name="children" placeholder="0" required>
-              <button class="button-plus" type="button"><span class="visually-hidden">плюс</span></button>
-            </div>
-            <input type="submit" value="Найти">
-          </form>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button class="search-form-button" type="button">Найти гостиницу</button>
+            <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+              <div class="form-row">
+                <p class="arrival-date-form">
+                  <label>Дата заезда:</label>
+                  <input type="text" name="arrival-day" value="24 апреля 2017">
+                  <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span></button>
+                </p>
+              </div>
+              <div class="form-row">
+                <p class="departure-date-form">
+                  <label>Дата выезда:</label>
+                  <input type="text" name="departure-day" value="4 июля 2017">
+                  <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span></button>
+                </p>
+              </div>
+              <div class="half-width adults-number-form">
+                <label for="adults">Взрослые:</label>
+                <button type="button" class="button-minus"><span class="visually-hidden">минус</span></button>
+                <input  class="count" type="text"  id="adults" name="adults" placeholder="2" required>
+                <button class="button-plus" type="button"><span class="visually-hidden">плюс</span></button>
+              </div>
+              <div class="half-width children-number-form">
+                <label for="children">Дети:</label>
+                <button type="button" class="button-minus"><span class="visually-hidden">минус</span></button>
+                <input  class="count" type="text"  id="children" name="children" placeholder="0" required>
+                <button class="button-plus" type="button"><span class="visually-hidden">плюс</span></button>
+              </div>
+              <input type="submit" value="Найти">
+            </form>
         </section>
         <section class="map">
           <img src="img/map-1.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
@@ -120,13 +127,13 @@
       <footer class="main-footer">
         <a href="#" class="visit" alt="visitsedona">#Visitsedona</a>
           <div class="footer-social">
-            <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-            <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-            <a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
+            <a class="social-button social-button-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+            <a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <a class="social-button social-button-yt" href="#"><span class="visually-hidden">Ютуб</span></a>
           </div>
         <p class="footer-copyright">
           <b>Website by</b>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo"><span class="visually-hidden">HTML ACADEMY</span></a>>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo"><span class="visually-hidden">HTML ACADEMY</span></a>
         </p>
       </footer>
     </div>
